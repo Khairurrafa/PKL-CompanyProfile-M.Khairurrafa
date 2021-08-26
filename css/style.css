@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
 /* ========== Font End ========== */
 
+h1 {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+/* ========== Landing Page ========== */
 /* ===== Navbar ===== */
 nav {
   padding: 10px 100px;
@@ -43,6 +51,7 @@ nav .nav-item .nav-link.nak.active::after {
   text-align: left;
 }
 .carousel .carousel-caption h1 {
+  color: white;
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -69,12 +78,6 @@ nav .nav-item .nav-link.nak.active::after {
 /* ===== Slider End ===== */
 
 /* ===== Keunggulan ===== */
-#keunggulan h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  color: black;
-}
 #keunggulan h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -114,9 +117,6 @@ hr {
 }
 #tentang-kami .teks-tentangkami h1 {
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
 }
 #tentang-kami .teks-tentangkami p {
   color: white;
@@ -135,12 +135,6 @@ hr {
 /* ===== Tentang Kami End ===== */
 
 /* ===== Product ===== */
-#product h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  color: black;
-}
 #product hr {
   display: block;
   color: coral;
@@ -196,8 +190,6 @@ hr {
 #layanan .content h1 {
   font-size: 25px;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -245,13 +237,8 @@ hr {
   background-color: rgba(0, 0, 0, 0.8);
 }
 /* ===== Layanan End ===== */
+
 /* ===== Informasi ===== */
-#informasi h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  color: black;
-}
 #informasi hr {
   display: block;
   color: coral;
@@ -269,14 +256,12 @@ hr {
 #informasi .card-body a:hover {
   font-weight: 600;
 }
+#informasi .tengah {
+  margin: 0 20px;
+}
 /* ===== Informasi End ===== */
 
 /* ===== Hubungi Kami ===== */
-#hubungi-kami h1 {
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  font-weight: 700;
-}
 #hubungi-kami h3 {
   font-family: 'Montserrat', sans-serif;
   color: black;
@@ -305,13 +290,48 @@ hr {
 
 /* ===== Footer ===== */
 footer {
-  background: black;
+  background: rgba(0, 0, 0, 0.9);
 }
 footer h2 {
   font-size: 25px;
   opacity: 0.7;
 }
 /* ===== Footer End ===== */
+/* ========== Landing Page End ========== */
+
+/* ========== Detail Informasi ========== */
+#detail-informasi p {
+  font-family: 'Poppins', sans-serif;
+}
+#detail-informasi img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 93%;
+}
+#informasi-page hr {
+  display: block;
+  color: coral;
+  opacity: 100%;
+  width: 100px;
+  height: 4px;
+}
+/* ========== Detail Informasi End ========== */
+
+/* ========== Produk Page ========== */
+#produk-page .kiri h1 {
+  color: white;
+}
+#produk-page p {
+  font-family: 'Poppins', sans-serif;
+}
+#produk-page img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 93%;
+}
+/* ========== Produk Page End ========== */
 
 /* ===== Display ===== */
 @keyframes animate {
@@ -402,6 +422,12 @@ footer h2 {
   }
   #layanan .content p {
     font-size: 14px;
+  }
+  #detail-informasi img {
+    width: 100%;
+  }
+  #informasi .tengah {
+    margin: 0;
   }
 }
 /* ===== Display End ===== */
